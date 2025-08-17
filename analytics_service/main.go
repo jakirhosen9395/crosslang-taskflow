@@ -48,7 +48,7 @@ func main() {
 
 	mongoURI := os.Getenv("MONGO_URI")
 	if mongoURI == "" {
-		mongoURI = "mongodb://localhost:27017"
+		mongoURI = "mongodb://mongodb:27017"
 	}
 	dbName := os.Getenv("DB_NAME")
 	if dbName == "" {
