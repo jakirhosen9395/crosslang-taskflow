@@ -14,7 +14,7 @@ export default function Dashboard() {
 
   const fetchAnalytics = async () => {
     try {
-      const res = await fetch(`http://localhost:8003/analytics/${username}`, {
+      const res = await fetch(`${VITE_ANALYTICS_URL}/analytics/${username}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

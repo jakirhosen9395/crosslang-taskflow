@@ -41,7 +41,7 @@ export default function TodoList({ onTodosChange }) {
     );
 
     // Notify Analytics Service
-    await fetch(`http://localhost:8003/analytics/todo-status-change`, {
+    await fetch(`${VITE_ANALYTICS_URL}/analytics/todo-status-change`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
